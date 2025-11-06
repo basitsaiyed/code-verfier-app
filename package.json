@@ -1,0 +1,13 @@
+{
+  "name": "code-verifier-app",
+  "version": "1.0.0",
+  "description": "Random code generator and verifier",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}
