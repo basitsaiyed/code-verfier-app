@@ -1,7 +1,7 @@
-// Import the getCurrentCode function from get-code
-const { getCurrentCode } = require('./get-code');
+// Import the getCurrentCodeInfo function from get-code
+const { getCurrentCodeInfo } = require('./get-code');
 
-exports.handler = async (event, context) => {
+exports.handler = async (event) => {
   // Enable CORS
   const headers = {
     'Access-Control-Allow-Origin': '*',
@@ -44,7 +44,7 @@ exports.handler = async (event, context) => {
     }
 
     // Get the current valid code
-    const currentCode = getCurrentCode();
+    const { code: currentCode } = getCurrentCodeInfo();
 
     // Compare codes (case-insensitive)
     const isValid = submittedCode.toUpperCase() === currentCode.toUpperCase();
