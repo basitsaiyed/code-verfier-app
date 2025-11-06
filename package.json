@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Random code generator and verifier",
   "scripts": {
-    "dev": "netlify dev",
-    "build": "echo 'No build step required'"
+    "dev": "node init && netlify dev",
+    "build": "node init && echo 'No build step required'"
   },
   "dependencies": {},
   "devDependencies": {
